@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	<style>
+		<!--
+		.FrameOne{align-items: center;text-align: center}
+		.FrameThree{margin-left: 550px;margin-top: 100px}
+		#frame {position: absolute;width: 800px;height: 400px;overflow: hidden;border-radius:5px;border: 10px solid #FFB2B3}
+		#photos img {float: left;width:800px;height:400px}
+		#photos {position: absolute;z-index:9px;width: calc(800px * 5)}
+		body{background-image: url(13.png)}
+		.Play{animation: ma 20s ease-out infinite alternate}
+		@keyframes ma {
+			0%,20% {		margin-left: 0px;		}
+			25%,40% {		margin-left: -800px;	}
+			45%,60% {		margin-left: -1600px;	}
+			65%,80% {		margin-left: -2400px;	}
+			85%,100% {		margin-left: -3200px;	}
+		}
+		.Num{position:absolute;z-index:10;display:inline-block;right:325px;top:360px;border-radius:100%;background: #FFBFC0;width:25px;height:25px;line-height:25px;cursor:pointer;color:#fff;text-align:center;opacity:0.8;}
+		.Num:hover{background: #FC8183;}
+		.Num:hover,#photos:hover{animation-play-state:paused;}
+		.Num:nth-child(2){margin-right:30px}
+		.Num:nth-child(3){margin-right:60px}
+		.Num:nth-child(4){margin-right:90px}
+		.Num:nth-child(5){margin-right:120px}
+		#a1:hover ~ #photos{animation: ma1 .5s ease-out forwards;}
+		#a2:hover ~ #photos{animation: ma2 .5s ease-out forwards;}
+		#a3:hover ~ #photos{animation: ma3 .5s ease-out forwards;}
+		#a4:hover ~ #photos{animation: ma4 .5s ease-out forwards;}
+		#a5:hover ~ #photos {animation: ma5 .5s ease-out forwards;}
+		@keyframes ma1 {0%{margin-left:-3200px;}100%{margin-left:-0px;}	}
+		@keyframes ma2 {0%{margin-left:-3200px;}100%{margin-left:-800px;}	}
+		@keyframes ma3 {100%{margin-left:-1600px;}	}
+		@keyframes ma4 {100%{margin-left:-2400px;}	}
+		@keyframes ma5 {100%{margin-left:-3200px;}	}
+		.Footer{text-align: center;font-family: simhei;font-size: 10px;background-color: #E9C0E0;height: 100px;padding-top: 80px;margin-top: 750px}
+		-->
+	</style>
+</head>
+
+<body>
+	<div class="FrameOne">
+		<img src="6.jpg" width="400" alt="aixin">
+	</div>
+		<div class="FrameThree">
+			<div id="frame" >
+					<a id="a1" class="Num">5</a>
+					<a id="a2" class="Num">4</a>
+					<a id="a3" class="Num">3</a>
+					<a id="a4" class="Num">2</a>
+					<a id="a5" class="Num">1</a>
+					<div id="photos" class="Play">
+						  <a href=""><img src="1.jpg" alt="1"></a>
+						  <a href=""><img src="2.png" alt="2"></a>
+						  <a href=""><img src="3.png" alt="3"></a>
+						  <a href=""><img src="4.png" alt="4"></a>
+						  <a href=""><img src="5.png" alt="5"></a>
+					</div>
+			</div>
+		</div>
+	<p class="Footer">
+				该网站一切解释权归左玉龙所有!
+				</p>
+</body>
+</html>
